@@ -71,6 +71,30 @@ body {
     top: 200px;
     right: 200px;
 }
+		
+		.play-me {
+			position: fixed; 
+			bottom: 0px; 
+			left: 0px; 
+			display: block; 
+			width: 187px; 
+			background: black; 
+			color: white; 
+			z-index: 99999999; 
+			height: 48px;
+		}
+		
+		.next-me {
+			position: fixed; 
+			bottom: 0px; 
+			right: 0px; 
+			display: block; 
+			width: 188px; 
+			background: red; 
+			color: white; 
+			z-index: 99999999; 
+			height: 48px;
+		}
 
 .confetti {
   height: 100vh;
@@ -272,7 +296,7 @@ body {
 	
 	<div class="container">
   
-		<div id="clickme" style="position: fixed; bottom: 0px; left: 0px; display: block; width: 375px; background: black; color: white; z-index: 99999999; height: 48px;">click me</div>
+		<div id="clickme" class="play-me">Play</div><div class="next-me">Next</div>
 		
 		<img src="receipt-2.png" alt="" class="receipt_img" />
   
