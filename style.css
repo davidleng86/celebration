@@ -64,15 +64,18 @@ body {
 }
 		
 		.play-me {
-			position: fixed; 
+			position: fixed;
 			bottom: 0px; 
 			left: 0px; 
 			display: block; 
 			width: 187px; 
-			background: black; 
-			color: white; 
+			background-color: #e8e8e8; 
+			color: #3c3c3c; 
 			z-index: 99999999; 
 			height: 66px;
+			text-align:center;
+			line-height:66px;
+			font-family: Arial, sans-serif;
 		}
 		
 		.next-me {
