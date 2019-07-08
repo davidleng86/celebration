@@ -2,42 +2,43 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
-
 <title>SBC Celebration</title>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="style.css" type="text/css">
+	<style>
+	
+	
+		
+		
+	</style>
 	
 </head>
 
-<body> 
+<body>
 	
 	
 	
 	
 	<div class="container">
-  
-		<div id="clickme" class="play-me">Play</div><a href="sbc-full.html" class="next-me">Next</a>
 		
-		<img src="receipt-2.png" alt="" class="receipt_img" />
+		<div id="clickme" class="play-me">Play</div><div class="next-me">Next</div>
+  
+		
+		<img src="Opted In - Qualified - Notification.png" alt="" class="receipt_img" />
   
 		<div class="div_slide">
 		
-			<img src="Group.png" class="group_img" alt="" />
+			<img src="full-width-slide.png" class="group_img" alt="" />
 			
 		</div>
   
 		<div id="overlay"></div>
 		<div id="confetti" class="confetti"></div>
-		
-		
 
 	
 	</div>
-	
-	
-	
+
 	
 	<script>
 	
@@ -62,27 +63,6 @@ var colourClasses = [
     'confetti__item--colour5',
 ];
 
-
-/*document.getElementById("button").onclick = function fun()
-{
-  this.remove();
-  
-  for(let i = 0; i < 200; i++) {
-    var newNode = document.createElement('div');
-    var randomClass = animationClasses[Math.floor(Math.random() * animationClasses.length)];
-    var randomColour = colourClasses[Math.floor(Math.random() * colourClasses.length)];
-    var animationDelay = parseFloat(Math.min(0 + (Math.random() * (5 - 0)), 5).toFixed(2)) + "s";
-    var left = Math.floor(Math.random() * (100 - 0 + 1)) + 0 + "vw";
-    
-    newNode.className = 'confetti__item ' + randomClass + ' ' + randomColour;
-    
-    newNode.setAttribute("style", "animation-delay: " + animationDelay + "; left: " + left + ";");
-      
-    document.getElementById('confetti').appendChild(newNode);
-  }
-}*/
-
-
 function fun()
 {
 
@@ -106,9 +86,19 @@ $( "#clickme" ).click(function() {
 $("#overlay").fadeIn();
 	fun();
   $( ".div_slide" ).animate({
-    bottom: "-200",
+    bottom: "0",
   }, 1000, function() {
     
+  });
+});
+		
+		
+		$( ".div_slide" ).click(function() {
+	$("#confetti, #overlay").fadeOut();
+  $( ".div_slide" ).animate({
+    top: "-611",
+  }, 1000, function() {
+    // Animation complete.
   });
 });
 	
