@@ -11,7 +11,6 @@
 	
 	
 		
-		
 	</style>
 	
 </head>
@@ -23,14 +22,14 @@
 	
 	<div class="container">
 		
-		<div id="clickme" class="play-me">Play</div><a href="sbc-jeff.html" class="next-me">Next</a>
+		<div id="clickme" class="play-me">Play</div><a href="sbc-full.html" class="next-me">Next</a>
   
 		
-		<img src="Opted In - Qualified - Notification.png" alt="" class="receipt_img" />
+		<img src="receipt-2.png" alt="" class="receipt_img" />
   
 		<div class="div_slide">
 		
-			<img src="full-width-slide.png" class="group_img" alt="" />
+			<img src="Group-2.png" class="group_img" alt="" />
 			
 		</div>
   
@@ -39,7 +38,8 @@
 
 	
 	</div>
-
+	
+	
 	
 	<script>
 	
@@ -87,19 +87,9 @@ $( "#clickme" ).click(function() {
 $("#overlay").fadeIn();
 	fun();
   $( ".div_slide" ).animate({
-    bottom: "0",
+    bottom: "-200",
   }, 1000, function() {
     
-  });
-});
-		
-		
-		$( ".div_slide" ).click(function() {
-	$("#confetti, #overlay").fadeOut();
-  $( ".div_slide" ).animate({
-    top: "-611",
-  }, 1000, function() {
-    // Animation complete.
   });
 });
 	
