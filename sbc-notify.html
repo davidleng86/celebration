@@ -2,15 +2,23 @@
 <html>
 <head>
 <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width">
 <title>SBC Celebration</title>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="style.css" type="text/css">
+	
 	<style>
-	
-	
 		
+		.fade-img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 375px;
+			height: 667px;
+			display: none;
+		}
+	
 	</style>
 	
 </head>
@@ -21,25 +29,17 @@
 	
 	
 	<div class="container">
-		
-		<div id="clickme" class="play-me">Play</div><a href="sbc-notify.html" class="next-me">Next</a>
   
+		<img src="receipt.png" alt="" id="fade-img" class="receipt_img fade-img" />
+		<img id="clickme" src="receipt-hp.png" alt="" class="receipt_img" />
 		
-		<img src="receipt-2.png" alt="" class="receipt_img" />
-  
-		<div class="div_slide">
 		
-			<img src="Group-2.png" class="group_img" alt="" />
-			
-		</div>
   
-		<div id="overlay"></div>
 		<div id="confetti" class="confetti"></div>
 
 	
 	</div>
-	
-	
+
 	
 	<script>
 	
@@ -84,15 +84,10 @@ function fun()
 
 $( "#clickme" ).click(function() {
 	
-$("#overlay").fadeIn();
+$("#fade-img").fadeIn();
 	fun();
-  $( ".div_slide" ).animate({
-    bottom: "-180",
-  }, 1000, function() {
-    
-  });
 });
-	
+
 	</script>
 
 	
