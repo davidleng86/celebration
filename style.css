@@ -30,6 +30,7 @@ body {
 		}
 		
 .div_slide {
+	
 			width: 375px;
 			height: 667px;
 			position: absolute;
@@ -37,12 +38,21 @@ body {
 			left: 0;
 	z-index: 2;
 		}
+
+.div_slide_two {
+	
+			width: 375px;
+			height: 667px;
+			position: absolute;
+			bottom:-1206px;
+			left: 0;
+	z-index: 3;
+		}
 		#overlay {
 			width: 100%;
 			height: 100%;
 			background: black;
 			opacity: 0.4;
-			display: block;
 			position: absolute;
 			left: 0;
 			top: 0;
@@ -66,7 +76,7 @@ body {
 		.play-me {
 			position: fixed;
 			bottom: 0px; 
-			left: 0px; 
+			right: 187px; 
 			display: block; 
 			width: 187px; 
 			background-color: #e8e8e8; 

@@ -33,6 +33,12 @@
 			<img src="full-width-slide.png" class="group_img" alt="" />
 			
 		</div>
+		
+		<div class="div_slide_two">
+		
+			<img src="choose-reward.png" class="group_img" alt="" />
+			
+		</div>
   
 		<div id="overlay"></div>
 		<div id="confetti" class="confetti"></div>
@@ -91,6 +97,11 @@ $("#overlay").fadeIn();
   }, 1000, function() {
     
   });
+	$( ".div_slide_two" ).animate({
+    bottom: "-539",
+  }, 1000, function() {
+    
+  });
 });
 		
 		
@@ -101,6 +112,12 @@ $("#overlay").fadeIn();
   }, 1000, function() {
     // Animation complete.
   });
+			$( ".div_slide_two" ).animate({
+    top: "0",
+  }, 1000, function() {
+    // Animation complete.
+  });
+			
 });
 	
 	</script>
